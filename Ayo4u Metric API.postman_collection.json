@@ -1,0 +1,326 @@
+{
+	"info": {
+		"_postman_id": "8c6c7a79-e219-480c-b4ef-df0ce1fabd5a",
+		"name": "Ayo4u Metric API",
+		"description": "Springboot restful api for Metric to imperial conversion\n\nContact Support:\n Name: ayo4u\n Email: ayo4u@test.com",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "convertArea",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"fromUnit\": \"HECTARE_UNIT\",\n    \"toUnit\": \"SQUARE_KILOMETER_UNIT\",\n    \"value\": 17909515.82995364\n}"
+				},
+				"url": {
+					"raw": "{{baseUrl}}/area",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"area"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "OK",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"fromUnit\": \"HECTARE_UNIT\",\n    \"toUnit\": \"SQUARE_KILOMETER_UNIT\",\n    \"value\": 17909515.82995364\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/area",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"area"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n \"result\": \"aute Excepteur in\"\n}"
+				}
+			]
+		},
+		{
+			"name": "convertLength",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"fromUnit\": \"KILOMETER_UNIT\",\n    \"toUnit\": \"MILLIMETER_UNIT\",\n    \"value\": -87511576.29887803\n}"
+				},
+				"url": {
+					"raw": "{{baseUrl}}/length",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"length"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "OK",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"fromUnit\": \"KILOMETER_UNIT\",\n    \"toUnit\": \"MILLIMETER_UNIT\",\n    \"value\": -87511576.29887803\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/length",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"length"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n \"result\": \"aute Excepteur in\"\n}"
+				}
+			]
+		},
+		{
+			"name": "convertTemperature",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"fromUnit\": \"CELSIUS_UNIT\",\n    \"toUnit\": \"CELSIUS_UNIT\",\n    \"value\": -97510558.21133807\n}"
+				},
+				"url": {
+					"raw": "{{baseUrl}}/temperature",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"temperature"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "OK",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"fromUnit\": \"CELSIUS_UNIT\",\n    \"toUnit\": \"CELSIUS_UNIT\",\n    \"value\": -97510558.21133807\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/temperature",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"temperature"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n \"result\": \"aute Excepteur in\"\n}"
+				}
+			]
+		},
+		{
+			"name": "convertTime",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"fromUnit\": \"SECOND_UNIT\",\n    \"toUnit\": \"MONTH_UNIT\",\n    \"value\": 28392501.980059803\n}"
+				},
+				"url": {
+					"raw": "{{baseUrl}}/time",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"time"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "OK",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"fromUnit\": \"SECOND_UNIT\",\n    \"toUnit\": \"MONTH_UNIT\",\n    \"value\": 28392501.980059803\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/time",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"time"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n \"result\": \"aute Excepteur in\"\n}"
+				}
+			]
+		},
+		{
+			"name": "convertWeight",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"fromUnit\": \"POUND_UNIT\",\n    \"toUnit\": \"POUND_UNIT\",\n    \"value\": 32948173.12082015\n}"
+				},
+				"url": {
+					"raw": "{{baseUrl}}/weight",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"weight"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "OK",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"fromUnit\": \"POUND_UNIT\",\n    \"toUnit\": \"POUND_UNIT\",\n    \"value\": 32948173.12082015\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/weight",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"weight"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n \"result\": \"aute Excepteur in\"\n}"
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://localhost:8080"
+		}
+	]
+}

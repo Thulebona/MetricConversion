@@ -3,7 +3,6 @@ package com.ayo4u.metricsystem.model.weight;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 
-
 import javax.measure.quantity.Mass;
 import javax.measure.unit.Unit;
 import javax.measure.unit.UnitFormat;
@@ -27,6 +26,6 @@ public enum WeightUnit {
     private final Unit<Mass> unit;
 
     public String formatUnit() {
-        return UnitFormat.getInstance().format(this.getUnit());
+        return name().equals("CARAT_UNIT") ? "ct" : UnitFormat.getInstance().format(this.getUnit());
     }
 }

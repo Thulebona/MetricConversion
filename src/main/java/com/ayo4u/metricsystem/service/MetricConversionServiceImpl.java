@@ -6,6 +6,7 @@ import com.ayo4u.metricsystem.model.clock.TimeOrClockInput;
 import com.ayo4u.metricsystem.model.length.LengthInput;
 import com.ayo4u.metricsystem.model.temperature.TemperatureInput;
 import com.ayo4u.metricsystem.model.weight.WeightInput;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
@@ -76,7 +77,7 @@ public class MetricConversionServiceImpl implements MetricConversionService {
         df.setMaximumFractionDigits(maxFractionDigits);
         String msg = String.format("%s %s", df.format(result), symbol);
         return OutputResponse.builder()
-                .result(msg)
+                .result(StringUtils.trimToEmpty(msg))
                 .build();
     }
 
